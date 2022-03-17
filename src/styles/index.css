@@ -84,10 +84,18 @@ main{
     margin-bottom: 2rem;
 }
 
+.hidden{
+    overflow: hidden;
+}
+
 .Contenedor_de_pokemon img {
     width: 145px;
     height: auto;
     border-radius: 10px;
+}
+
+.hide{
+    display: none;
 }
 
 
@@ -103,8 +111,9 @@ main{
         margin-top: 15px;
         width: 265px;
     }
-    #Contenedor_de_pokemon{
+    .Contenedor_de_pokemon{
         margin-top: 15px;
+        width: auto;
     }
     main{
         width: 100%;

@@ -10,10 +10,10 @@ if ( JSON.parse(localStorage.getItem("pokemon")) === null) {
     contador = JSON.parse(localStorage.getItem("pokemon")).length
 }
 
-
 //CSS
 import './styles/index.css'
 import './styles/distintosTipos.css'
+import './styles/preloader.css'
 
 //modulos
 import uniqid from 'uniqid'
@@ -346,3 +346,10 @@ listaDePokemonUI.addEventListener('click', (e) => {
 })
 
 document.addEventListener('DOMContentLoaded', pintarDB)
+
+
+//Preloader
+window.addEventListener('load', () => {
+    document.getElementById("loader").classList.add('hide')
+    console.log("hola")
+})

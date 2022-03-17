@@ -1,28 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap"
+      rel="stylesheet"
+    />
     <title>Crud pokemon LocalStorage</title>
-</head>
-<body>
+  </head>
+  <body class="hidden">
     <main>
-        <h2 class="Titulo">Agrega un pokemon</h2>
-        <form class="formulario" id="formulario">
-            <select name="" class="select" id="pokemon">
-            </select>
-            <button class="boton" type="submit">Guardar</button>
-        </form>
-
-        <div id="listaPokemon">
-        
+      <div class="centrar_preloader" id="loader">
+        <div class="lds-spinner">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
+      </div>
+      <h2 class="Titulo">Agrega un pokemon</h2>
+      <form class="formulario" id="formulario">
+        <select name="" class="select" id="pokemon"></select>
+        <button class="boton" type="submit">Guardar</button>
+      </form>
+
+      <div id="listaPokemon"></div>
     </main>
-</body>
+  </body>
 </html>
