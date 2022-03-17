@@ -3,11 +3,17 @@ const formularioUI = document.querySelector('#formulario')
 const listaDePokemonUI = document.querySelector('#listaPokemon')
 let pokemonUI = document.querySelector('#pokemon')
 let arrayPokemon = []
-let contador = 0
+let contador
+if ( JSON.parse(localStorage.getItem("pokemon")) === null) {
+    contador = 0
+}else{
+    contador = JSON.parse(localStorage.getItem("pokemon")).length
+}
 
 
 //CSS
 import './styles/index.css'
+import './styles/distintosTipos.css'
 
 //modulos
 import uniqid from 'uniqid'
