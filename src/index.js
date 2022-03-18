@@ -351,5 +351,7 @@ document.addEventListener('DOMContentLoaded', pintarDB)
 //Preloader
 window.addEventListener('load', () => {
     document.getElementById("loader").classList.add('hide')
-    console.log("hola")
+    //quitar classe al body
+    document.body.classList.remove('hidden')
+
 })
